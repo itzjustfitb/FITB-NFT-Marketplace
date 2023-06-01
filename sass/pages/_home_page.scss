@@ -1,0 +1,2506 @@
+@import "../abstracts/colors.scss";
+
+// ? Hero Section and Trending Colection
+body {
+  background-color: $Background;
+  font-family: $work_sans;
+  #hero_section {
+    width: 100%;
+    height: 704px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #hero_section_container {
+      width: 1050px;
+      height: 544px;
+      background-color: $Background;
+      display: flex;
+      gap: 20px;
+      #hero_left {
+        width: 510px;
+        height: 544px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        #headline {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          height: 347px;
+          color: $White;
+          h1 {
+            font-weight: 600;
+            font-size: 67px;
+            line-height: 73.7px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 160%;
+          }
+        }
+        button {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          width: 224px;
+          height: 60px;
+          border-radius: 20px;
+          background-color: $Call-to-action;
+          border: none;
+          position: relative;
+          overflow: hidden;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+          p {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22.4px;
+            color: $White;
+          }
+        }
+        button:before,
+        button:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -150%;
+          width: 150%;
+          height: 100%;
+          background-color: $White;
+          opacity: 0.2;
+          transform: rotate(45deg);
+          transition: all ease 1s;
+        }
+        button:after {
+          transition-delay: 0.2s;
+        }
+        button:hover::before,
+        button:hover::after {
+          left: 100%;
+        }
+        #additional_info {
+          display: flex;
+          gap: 30px;
+          .info {
+            width: 150px;
+            height: 77px;
+            color: $White;
+            h1 {
+              font-family: monospace;
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 39.2px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 23.99px;
+              line-height: 38.38px;
+            }
+          }
+        }
+      }
+
+      #hero_right {
+        width: 510px;
+        height: 544px;
+        display: flex;
+        align-items: start;
+        img:nth-child(2),
+        img:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+  }
+  #trending_collection {
+    width: 100%;
+    height: 836px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    #trending_headline {
+      width: 1046px;
+      height: 91px;
+      color: $White;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      h1 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 45.6px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 35.2px;
+      }
+    }
+    #collection_card_row {
+      width: 1050px;
+      height: 525px;
+      display: flex;
+      justify-content: center;
+      .row {
+        display: flex;
+        gap: 15px;
+        .cards_row {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          img {
+            transition: 0.4s;
+          }
+          img:hover {
+            transform: scale(1.05);
+          }
+          .cards_row_bottom {
+            display: flex;
+            gap: 15px;
+            button {
+              cursor: pointer;
+              width: 100px;
+              border-radius: 20px;
+              background-color: $Call-to-action;
+              border: none;
+              color: $White;
+              font-family: $space_mono;
+              font-weight: 700;
+              font-size: 20px;
+              position: relative;
+              overflow: hidden;
+            }
+            button:after {
+              content: "";
+              position: absolute;
+              top: 30%;
+              left: -200%;
+              width: 150%;
+              height: 50%;
+              background-color: $White;
+              opacity: 0.2;
+              transform: rotate(75deg);
+              transition: all ease 1s;
+            }
+            button:after {
+              transition-delay: 0.2s;
+            }
+            button:hover::before,
+            button:hover::after {
+              left: 100%;
+            }
+          }
+          .texts_trending_collection {
+            color: $White;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h1 {
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 30.8px;
+            }
+            div {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #hero_section {
+      #hero_section_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 381px;
+        #hero_left {
+          width: 330px;
+          display: flex;
+          height: 381px;
+          gap: 20px;
+          #headline {
+            height: 224px;
+            display: flex;
+            gap: 20px;
+            h1 {
+              height: 138px;
+              font-size: 38px;
+              line-height: 45.6px;
+            }
+            p {
+              font-size: 16px;
+              line-height: 22.4px;
+            }
+          }
+          > button {
+            height: 60px;
+          }
+          #additional_info {
+            .info {
+              display: flex;
+              flex-direction: column;
+              h1 {
+                font-size: 22px;
+                line-height: 35.2px;
+              }
+              p {
+                font-size: 16px;
+                line-height: 22.4px;
+              }
+            }
+          }
+        }
+        #hero_right {
+          width: 330px;
+          height: 381px;
+          display: flex;
+          img:first-child,
+          img:nth-child(3) {
+            display: none;
+          }
+          img:nth-child(2) {
+            display: initial;
+          }
+        }
+      }
+    }
+    #trending_collection {
+      width: 100%;
+      height: 716px;
+      #trending_headline {
+        width: 690px;
+        height: 71px;
+      }
+      #collection_card_row {
+        width: 690px;
+        height: 525px;
+        .cards_row:last-child {
+          display: none;
+          img,
+          button,
+          h1,
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #hero_section {
+      width: 100%;
+      display: flex;
+      height: 786px;
+      justify-content: center;
+      #hero_section_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 315px;
+        height: 706px;
+        gap: 40px;
+        #hero_left {
+          width: 315px;
+          display: flex;
+          height: 381px;
+          gap: 30px;
+          #headline {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 154px;
+            h1 {
+              height: 78px;
+              font-size: 28px;
+              line-height: 39.2px;
+            }
+            p {
+              font-size: 16px !important;
+              line-height: 22.4px;
+            }
+          }
+          #additional_info {
+            p {
+              font-size: 16px;
+              line-height: 22.4px;
+            }
+          }
+          > button {
+            width: 100%;
+          }
+        }
+        #hero_right {
+          width: 330px;
+          height: 381px;
+          display: flex;
+          justify-content: center;
+          img:first-child,
+          img:nth-child(2) {
+            display: none;
+          }
+          img:nth-child(3) {
+            display: initial;
+          }
+        }
+      }
+    }
+    #trending_collection {
+      width: 100%;
+      height: 100%;
+      #trending_headline {
+        width: 315px;
+        height: 93px;
+        h1 {
+          font-size: 28px;
+          line-height: 39.2px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 22.4px;
+        }
+      }
+      #collection_card_row {
+        width: 330px;
+        display: flex;
+        justify-content: center;
+        .cards_row:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// ? Top Creators
+#top_creators {
+  width: 100%;
+  height: 1085px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  #top_creators_headline {
+    width: 1050px;
+    height: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    div {
+      width: 703px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: $White;
+      h1 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 45.6px;
+      }
+      p {
+        font-size: 22px;
+        line-height: 35.2px;
+        font-weight: 400;
+      }
+    }
+    button {
+      cursor: pointer;
+      width: 247px;
+      height: 60px;
+      border: 2px solid $Call-to-action;
+      border-radius: 20px;
+      background-color: transparent;
+      color: $White;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+      overflow: hidden;
+      p {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 140%;
+      }
+      img {
+        transition: 10s;
+      }
+      img:nth-child(2) {
+        display: none;
+      }
+    }
+    button::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: $Call-to-action;
+      border-radius: 50% 50% 0 0;
+      z-index: -2;
+      transition: 0.4s;
+    }
+
+    button:hover {
+      border-color: $Call-to-action;
+      color: $White;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+    button:hover::before {
+      height: 180%;
+    }
+    button:hover img:first-child {
+      display: none;
+    }
+    button:hover img:nth-child(2) {
+      display: initial;
+    }
+  }
+  #top_creators_bottom {
+    width: 1050px;
+    height: 774px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .rows {
+      display: flex;
+      gap: 30px;
+      width: 1050px;
+      .creator_card {
+        cursor: pointer;
+
+        transition: 0.4s;
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 238px;
+        background-color: $Card-Color;
+
+        border-radius: 20px;
+        gap: 20px;
+        position: relative;
+        img {
+          width: 110px;
+          height: 120px;
+        }
+        > span {
+          transition: 0.8s;
+          font-family: $space_mono;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $Caption-Label-text;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: $Background;
+          top: 18px;
+          left: 20px;
+          position: absolute;
+        }
+        .row_bottom {
+          width: 200px;
+          height: 58px;
+          text-align: center;
+          color: $White;
+          a {
+            color: $White;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30.8px;
+          }
+          p {
+            font-family: $work_sans;
+            color: $Caption-Label-text;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+            span {
+              padding-left: 5px;
+              font-family: $space_mono;
+              color: $White;
+            }
+          }
+        }
+      }
+      .creator_card:hover {
+        transform: scale(1.1);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+          rgba(0, 0, 0, 0.05) 0px 5px 10px;
+      }
+      .creator_card:hover > span {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #top_creators {
+    width: 100%;
+    height: 573px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    #top_creators_headline {
+      width: 690px;
+      height: 93px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      gap: 100px;
+      div {
+        width: 343px;
+        height: 93px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: $White;
+        h1 {
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 39.2px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 22.4px;
+          font-weight: 400;
+        }
+      }
+      button {
+        cursor: pointer;
+        width: 247px;
+        height: 60px;
+        border: 2px solid $Call-to-action;
+        border-radius: 20px;
+        background-color: transparent;
+        color: $White;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        position: relative;
+        overflow: hidden;
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 140%;
+        }
+        img {
+          transition: 10s;
+        }
+        img:nth-child(2) {
+          display: none;
+        }
+      }
+      button::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: $Call-to-action;
+        border-radius: 50% 50% 0 0;
+        z-index: -2;
+        transition: 0.4s;
+      }
+
+      button:hover {
+        border-color: $Call-to-action;
+        color: $White;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      }
+
+      button:hover::before {
+        height: 180%;
+      }
+      button:hover img:first-child {
+        display: none;
+      }
+      button:hover img:nth-child(2) {
+        display: initial;
+      }
+    }
+    #top_creators_bottom {
+      width: 690px;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      .rows {
+        display: flex;
+        flex-wrap: wrap;
+        width: 690px;
+        height: 200px;
+        .creator_card {
+          transition: 0.4s;
+          width: 330px;
+          height: 100px;
+          display: flex;
+          flex-direction: row;
+          background-color: #3b3b3b;
+          border-radius: 20px;
+          gap: 20px;
+          position: relative;
+          img {
+            margin-left: 20px;
+            width: 60px;
+            height: 60px;
+          }
+          > span {
+            transition: 0.8s;
+            font-family: $space_mono;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $Caption-Label-text;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $Background;
+            top: 13px;
+            left: 12px;
+            position: absolute;
+          }
+          .row_bottom {
+            width: 200px;
+            height: 58px;
+            text-align: start;
+            color: $White;
+            a {
+              text-align: start;
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 30.8px;
+            }
+            p {
+              display: flex;
+              font-family: $work_sans;
+              color: $Caption-Label-text;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22.4px;
+              span {
+                padding-left: 5px;
+                font-family: $space_mono;
+                color: $White;
+              }
+            }
+          }
+        }
+        .creator_card:hover {
+          transform: scale(1.1);
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+            rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        }
+        .creator_card:hover > span {
+          transform: rotate(360deg);
+        }
+      }
+      .rows:last-child {
+        display: none;
+      }
+
+      .rows:nth-child(2) {
+        height: 100px;
+        .creator_card:nth-child(3),
+        .creator_card:nth-child(4) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  #top_creators {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    #top_creators_headline {
+      width: 315px;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
+      div {
+        width: 315px;
+        height: 93px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: $White;
+        h1 {
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 39.2px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 22.4px;
+          font-weight: 400;
+        }
+      }
+      button {
+        cursor: pointer;
+        width: 100%;
+        height: 60px;
+        border: 2px solid $Call-to-action;
+        border-radius: 20px;
+        background-color: transparent;
+        color: $White;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        position: relative;
+        overflow: hidden;
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 140%;
+        }
+        img {
+          transition: 10s;
+        }
+        img:nth-child(2) {
+          display: none;
+        }
+      }
+      button::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: $Call-to-action;
+        border-radius: 50% 50% 0 0;
+        z-index: -2;
+        transition: 0.4s;
+      }
+
+      button:hover {
+        border-color: $Call-to-action;
+        color: $White;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      }
+
+      button:hover::before {
+        height: 180%;
+      }
+      button:hover img:first-child {
+        display: none;
+      }
+      button:hover img:nth-child(2) {
+        display: initial;
+      }
+    }
+    #top_creators_bottom {
+      width: 315px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      .rows {
+        display: flex;
+        flex-wrap: wrap;
+        width: 315px;
+        height: 460px;
+        .creator_card {
+          transition: 0.4s;
+          width: 330px;
+          height: 100px;
+          display: flex;
+          flex-direction: row;
+          background-color: #3b3b3b;
+          border-radius: 20px;
+          gap: 20px;
+          position: relative;
+          img {
+            margin-left: 20px;
+            width: 60px;
+            height: 60px;
+          }
+          > span {
+            transition: 0.8s;
+            font-family: $space_mono;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $Caption-Label-text;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $Background;
+            top: 13px;
+            left: 12px;
+            position: absolute;
+          }
+          .row_bottom {
+            width: 200px;
+            height: 58px;
+            text-align: start;
+            color: $White;
+            a {
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 30.8px;
+            }
+            p {
+              display: flex;
+              font-family: $work_sans;
+              color: $Caption-Label-text;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22.4px;
+              span {
+                padding-left: 5px;
+                font-family: $space_mono;
+                color: $White;
+              }
+            }
+          }
+        }
+        .creator_card:hover {
+          transform: scale(1.1);
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+            rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        }
+        .creator_card:hover > span {
+          transform: rotate(360deg);
+        }
+      }
+      .rows:last-child {
+        display: none;
+      }
+
+      .rows:nth-child(2) {
+        height: 100px;
+        .creator_card:nth-child(2),
+        .creator_card:nth-child(3),
+        .creator_card:nth-child(4) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// ? Browse Categories
+#browse_categories {
+  width: 100%;
+  height: 928px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  #browse_categories_headline {
+    width: 1050px;
+    height: 46px;
+    h1 {
+      color: $White;
+      font-size: 38px;
+      line-height: 45.6px;
+      font-weight: 600;
+    }
+  }
+  #browse_categories_bottom {
+    width: 1050px;
+    height: 662px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .browse_categories_row {
+      display: flex;
+      gap: 30px;
+      .category_card {
+        transition: 0.4s;
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        height: 316px;
+        border-radius: 20px;
+        background-color: $Card-Color;
+        p {
+          padding: 20px 30px;
+          color: $White;
+          font-size: 22px;
+          line-height: 30.8px;
+          font-weight: 600;
+        }
+      }
+      .category_card:hover {
+        background-color: $Call-to-action;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #browse_categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: 629px;
+    #browse_categories_headline {
+      width: 690px;
+      height: 39px;
+      h1 {
+        font-size: 28px;
+        line-height: 39.2px;
+      }
+    }
+    #browse_categories_bottom {
+      width: 690px;
+      height: 470px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .browse_categories_row {
+        display: flex;
+        gap: 30px;
+        .category_card {
+          transition: 0.4s;
+          display: flex;
+          flex-direction: column;
+          width: 150px;
+          height: 231px;
+          border-radius: 20px;
+          background-color: $Card-Color;
+          img {
+            width: 150px;
+          }
+          p {
+            padding: 20px 20px;
+            color: $White;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+        }
+        .category_card:hover {
+          background-color: $Call-to-action;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  #browse_categories {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    #browse_categories_headline {
+      width: 315px;
+      height: 46px;
+      h1 {
+        font-size: 28px;
+        line-height: 39.2px;
+      }
+    }
+    #browse_categories_bottom {
+      width: 315px;
+      height: 918px;
+      gap: 30px;
+      display: flex;
+      flex-direction: row;
+      .browse_categories_row {
+        width: 147.5px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .category_card {
+          transition: 0.4s;
+          display: flex;
+          flex-direction: column;
+          width: 147.5px;
+          height: 231px;
+          border-radius: 20px;
+          background-color: $Card-Color;
+          img {
+            width: 147.5px;
+          }
+          p {
+            padding: 20px 20px;
+            color: $White;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+        }
+        .category_card:hover {
+          background-color: $Call-to-action;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+// ? Discover More NFT
+#discover_more_nft {
+  width: 100%;
+  height: 780px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  #discover_headline {
+    width: 1050px;
+    height: 91px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    div {
+      width: 763px;
+      color: $White;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h1 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 45.6px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 22px;
+        font-weight: 35.2px;
+      }
+    }
+    button {
+      color: $White;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      width: 187px;
+      height: 60px;
+      border-radius: 20px;
+      background-color: transparent;
+      border: 2px solid $Call-to-action;
+      position: relative;
+      overflow: hidden;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22.4px;
+      position: relative;
+      transition: 0.4s;
+    }
+    button::after {
+      content: "";
+      border-bottom: 4px solid $Call-to-action;
+      position: absolute;
+      width: 0;
+      height: 100px;
+      bottom: 0;
+      transition: 0.4s;
+    }
+    button:hover {
+      color: $Call-to-action;
+      border: 0px solid transparent;
+    }
+    button:hover::after {
+      width: 100%;
+    }
+  }
+  #discover_bottom {
+    width: 1050px;
+    height: 469px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    .discover_card {
+      position: relative;
+      width: 330px;
+      height: 469px;
+      border-radius: 20px;
+      background-color: $Card-Color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      img {
+        transition: 0.4s;
+      }
+      .artist_info {
+        width: 270px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        color: $White;
+        h1 {
+          font-size: 22px;
+          line-height: 30.8px;
+          font-weight: 600;
+        }
+        .artist_info_bottom {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            font-family: $space_mono;
+            list-style: 22.4px;
+          }
+        }
+      }
+      .artist_additional_info {
+        width: 270px;
+        height: 43px;
+        display: flex;
+        justify-content: center;
+        color: $White;
+        .artist_left {
+          width: 135px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          font-family: $space_mono;
+          h4 {
+            color: $Caption-Label-text;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 13.2px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+        }
+        .artist_right {
+          width: 135px;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          gap: 8px;
+          font-family: $space_mono;
+          h4 {
+            color: $Caption-Label-text;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 13.2px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+        }
+      }
+    }
+    .discover_card:hover > img {
+      opacity: 0.4;
+    }
+    .discover_card::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: 0;
+      border-radius: 20px;
+      border-bottom: 10px solid $Call-to-action;
+      transition: 0.4s;
+    }
+    .discover_card:hover::after {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #discover_more_nft {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    #discover_headline {
+      width: 690px;
+      height: 71px;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      height: 71px;
+      div {
+        width: 403px;
+        height: 71px;
+        color: $White;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 39.2px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          font-weight: 22.4px;
+        }
+      }
+      button {
+        color: $White;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 187px;
+        height: 60px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 2px solid $Call-to-action;
+        position: relative;
+        overflow: hidden;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22.4px;
+        position: relative;
+        transition: 0.4s;
+      }
+      button::after {
+        content: "";
+        border-bottom: 4px solid $Call-to-action;
+        position: absolute;
+        width: 0;
+        height: 100px;
+        bottom: 0;
+        transition: 0.4s;
+      }
+      button:hover {
+        color: $Call-to-action;
+        border: 0px solid transparent;
+      }
+      button:hover::after {
+        width: 100%;
+      }
+    }
+    #discover_bottom {
+      width: 690px;
+      height: 469px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      .discover_card {
+        position: relative;
+        width: 330px;
+        height: 469px;
+        border-radius: 20px;
+        background-color: $Card-Color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        img {
+          transition: 0.4s;
+        }
+        .artist_info {
+          width: 270px;
+          height: 60px;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          color: $White;
+          h1 {
+            font-size: 22px;
+            line-height: 30.8px;
+            font-weight: 600;
+          }
+          .artist_info_bottom {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              font-family: $space_mono;
+              list-style: 22.4px;
+            }
+          }
+        }
+        .artist_additional_info {
+          width: 270px;
+          height: 43px;
+          display: flex;
+          justify-content: center;
+          color: $White;
+          .artist_left {
+            width: 135px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-family: $space_mono;
+            h4 {
+              color: $Caption-Label-text;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 13.2px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22.4px;
+            }
+          }
+          .artist_right {
+            width: 135px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 8px;
+            font-family: $space_mono;
+            h4 {
+              color: $Caption-Label-text;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 13.2px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22.4px;
+            }
+          }
+        }
+      }
+      .discover_card:last-child {
+        display: none;
+      }
+      .discover_card:hover > img {
+        opacity: 0.4;
+      }
+      .discover_card::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        border-radius: 20px;
+        border-bottom: 10px solid $Call-to-action;
+        transition: 0.4s;
+      }
+      .discover_card:hover::after {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  #discover_more_nft {
+    width: 100%;
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    #discover_headline {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 315px;
+      gap: 40px;
+      height: 100%;
+      z-index: 1;
+      div {
+        width: 315px;
+        color: $White;
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 39.2px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          font-weight: 22.4px;
+        }
+      }
+      button {
+        color: $White;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        height: 60px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 2px solid $Call-to-action;
+        position: relative;
+        overflow: hidden;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22.4px;
+        position: relative;
+        transition: 0.4s;
+        z-index: 1;
+      }
+      button::after {
+        content: "";
+        border-bottom: 4px solid $Call-to-action;
+        position: absolute;
+        width: 0;
+        height: 100px;
+        bottom: 0;
+        transition: 0.4s;
+      }
+      button:hover {
+        color: $Call-to-action;
+        border: 0px solid transparent;
+      }
+      button:hover::after {
+        width: 100%;
+      }
+    }
+    #discover_bottom {
+      width: 315px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      .discover_card {
+        position: relative;
+        width: 315px;
+        height: 402px;
+        border-radius: 20px;
+        background-color: $Card-Color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        > img {
+          width: 315px;
+          height: 238px;
+          transition: 0.4s;
+        }
+        .artist_info {
+          width: 275px;
+          height: 60px;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          color: $White;
+          h1 {
+            font-size: 22px;
+            line-height: 30.8px;
+            font-weight: 600;
+          }
+          .artist_info_bottom {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              font-family: $space_mono;
+              list-style: 22.4px;
+            }
+          }
+        }
+        .artist_additional_info {
+          width: 270px;
+          height: 43px;
+          display: flex;
+          justify-content: center;
+          color: $White;
+          .artist_left {
+            width: 135px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-family: $space_mono;
+            h4 {
+              color: $Caption-Label-text;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 13.2px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22.4px;
+            }
+          }
+          .artist_right {
+            width: 135px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 8px;
+            font-family: $space_mono;
+            h4 {
+              color: $Caption-Label-text;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 13.2px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22.4px;
+            }
+          }
+        }
+      }
+      .discover_card:last-child {
+        display: flex;
+      }
+    }
+  }
+}
+
+#magic_mushrooms {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  #gradient {
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  #nft_info {
+    position: absolute;
+    width: 1050px;
+    height: 220px;
+    bottom: 20%;
+    display: flex;
+    align-items: end;
+    #info_left {
+      width: 755px;
+      height: 220px;
+      color: $White;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border-radius: 20px;
+        width: 151px;
+        height: 44px;
+        background-color: $Card-Color;
+      }
+      > p {
+        font-weight: 600;
+        font-size: 51px;
+        line-height: 56.1px;
+      }
+      button {
+        cursor: pointer;
+        transition: 0.4s;
+        width: 198px;
+        height: 60px;
+        border-radius: 20px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        a {
+          font-weight: 600;
+          line-height: 22.4px;
+          text-decoration: none;
+          color: $Black;
+          font-size: 16px;
+        }
+      }
+      button:hover {
+        transform: scale(1.05);
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      }
+    }
+    #info_right {
+      cursor: pointer;
+      opacity: 0.8;
+      width: 295px;
+      height: 144px;
+      border-radius: 20px;
+      background-color: $Card-Color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: $White;
+      gap: 10px;
+      p {
+        font-family: $space_mono;
+        font-size: 12px;
+        line-height: 13.2px;
+        font-weight: 400;
+      }
+      #clock {
+        display: flex;
+        flex-direction: column;
+        > p {
+          font-weight: 700;
+          line-height: 45.6px;
+          font-size: 38px;
+        }
+        div {
+          display: flex;
+          justify-content: center;
+          gap: 17px;
+          p {
+            width: 53px;
+          }
+        }
+      }
+      #clock_func {
+        display: flex;
+        gap: 20px;
+        button {
+          cursor: pointer;
+          width: 55px;
+          height: 30px;
+          background-color: $White;
+          border: 2px solid $Call-to-action;
+          border-radius: 7px;
+          color: $Call-to-action;
+          text-align: center;
+          transition: 0.4s;
+        }
+        button:hover {
+          background-color: $Call-to-action;
+          color: $White;
+          border-color: $White;
+          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+            rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+            rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+            rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+            rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+            rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #magic_mushrooms {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    #gradient {
+      background: linear-gradient(
+        180deg,
+        rgba(162, 89, 255, 0) 0%,
+        #a259ff 100%
+      );
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+    > img {
+      width: 100%;
+      object-fit: cover;
+    }
+    #nft_info {
+      transition: 0.4s;
+      position: absolute;
+      width: 670px;
+      height: 210px;
+      bottom: 20%;
+      display: flex;
+      align-items: end;
+      #info_left {
+        width: 375px;
+        height: 210px;
+        color: $White;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          border-radius: 20px;
+          width: 151px;
+          height: 44px;
+          background-color: $Card-Color;
+        }
+        > p {
+          font-weight: 600;
+          font-size: 38px;
+          line-height: 45.6px;
+        }
+        button {
+          cursor: pointer;
+          transition: 0.4s;
+          width: 198px;
+          height: 60px;
+          border-radius: 20px;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          a {
+            font-weight: 600;
+            line-height: 22.4px;
+            text-decoration: none;
+            color: $Black;
+            font-size: 16px;
+          }
+        }
+        button:hover {
+          transform: scale(1.05);
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+      }
+      #info_right {
+        opacity: 0.8;
+        width: 295px;
+        height: 144px;
+        border-radius: 20px;
+        background-color: $Card-Color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $White;
+        p {
+          font-family: $space_mono;
+          font-size: 12px;
+          line-height: 13.2px;
+          font-weight: 400;
+        }
+        #clock {
+          display: flex;
+          flex-direction: column;
+          > p {
+            font-weight: 700;
+            line-height: 45.6px;
+            font-size: 38px;
+          }
+          div {
+            display: flex;
+            justify-content: center;
+            gap: 17px;
+            p {
+              width: 53px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  #magic_mushrooms {
+    margin-top: 100px;
+    width: 100%;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    #gradient {
+      background: linear-gradient(
+        180deg,
+        rgba(162, 89, 255, 0) 0%,
+        #a259ff 100%
+      );
+
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #nft_info {
+      position: absolute;
+      width: 315px;
+      height: 414px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      #info_left {
+        width: 315px;
+        height: 100%;
+        color: $White;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          border-radius: 20px;
+          width: 151px;
+          height: 44px;
+          background-color: $Card-Color;
+        }
+        > p {
+          font-weight: 600;
+          font-size: 38px;
+          line-height: 45.6px;
+        }
+        button {
+          cursor: pointer;
+          transition: 0.4s;
+          width: 198px;
+          height: 60px;
+          border-radius: 20px;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          a {
+            font-weight: 600;
+            line-height: 22.4px;
+            text-decoration: none;
+            color: $Black;
+            font-size: 16px;
+          }
+        }
+        button:hover {
+          transform: scale(1.05);
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+      }
+      #info_right {
+        opacity: 0.8;
+        width: 295px;
+        height: 144px;
+        border-radius: 20px;
+        background-color: $Card-Color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $White;
+        p {
+          font-family: $space_mono;
+          font-size: 12px;
+          line-height: 13.2px;
+          font-weight: 400;
+        }
+        #clock {
+          display: flex;
+          flex-direction: column;
+          > p {
+            font-weight: 700;
+            line-height: 45.6px;
+            font-size: 38px;
+          }
+          div {
+            display: flex;
+            justify-content: center;
+            gap: 17px;
+            p {
+              width: 53px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#how_it_works {
+  width: 100%;
+  height: 738px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  #hiw_top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 1050px;
+    height: 91px;
+    color: $White;
+    h1 {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 45.6px;
+    }
+    p {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 35.2px;
+    }
+  }
+  #hiw_bottom {
+    display: flex;
+    gap: 30px;
+    width: 1050px;
+    height: 439px;
+    .hiw_card {
+      transition: 0.4s;
+      width: 330px;
+      height: 439px;
+      border-radius: 20px;
+      background-color: #3b3b3b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      color: $White;
+      img {
+        width: 250px;
+      }
+      .hiw_texts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        h1 {
+          font-size: 22px;
+          line-height: 30.8px;
+          font-weight: 600;
+        }
+        p {
+          width: 270px;
+          font-size: 16px;
+          line-height: 22.4px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .hiw_card:hover {
+      transform: translateY(10px);
+      box-shadow: #a159ff47 0px 25px 20px -20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #how_it_works {
+    width: 100%;
+    height: 528px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    #hiw_top {
+      width: 690px;
+      height: 71px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: $White;
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 39.2px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+      }
+    }
+    #hiw_bottom {
+      width: 690px;
+      height: 320px;
+      display: flex;
+      gap: 30px;
+      .hiw_card {
+        transition: 0.4s;
+        width: 210px;
+        height: 320px;
+        border-radius: 20px;
+        background-color: #3b3b3b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        color: $White;
+        img {
+          width: 160px;
+        }
+        .hiw_texts {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          gap: 10px;
+          h1 {
+            font-size: 16px;
+            line-height: 22.4px;
+            font-weight: 600;
+          }
+          p {
+            width: 170px;
+            font-size: 12px;
+            line-height: 16.8px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .hiw_card:hover {
+        transform: translateY(10px);
+        box-shadow: #a159ff47 0px 25px 20px -20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  #how_it_works {
+    width: 100%;
+    height: 685px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    #hiw_top {
+      width: 315px;
+      height: 71px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: $White;
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 39.2px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+      }
+    }
+    #hiw_bottom {
+      width: 315px;
+      height: 494px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .hiw_card {
+        transition: 0.4s;
+        width: 315px;
+        height: 157px;
+        border-radius: 20px;
+        background-color: #3b3b3b;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        color: $White;
+        img {
+          width: 100px;
+        }
+        .hiw_texts {
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+          gap: 10px;
+          h1 {
+            font-size: 16px;
+            line-height: 22.4px;
+            font-weight: 600;
+          }
+          p {
+            width: 150px;
+            font-size: 12px;
+            line-height: 16.8px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .hiw_card:hover {
+        transform: translateY(10px);
+        box-shadow: #a159ff47 0px 25px 20px -20px;
+      }
+    }
+  }
+}
+
+#join_our_weekly_digest {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #jowd_card {
+    width: 1050px;
+    height: 430px;
+    border-radius: 20px;
+    background-color: $Card-Color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    > img {
+      width: 425px;
+      height: 310px;
+    }
+    #jowd_right {
+      width: 425px;
+      height: 272px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      #jowd_headline {
+        width: 425px;
+        height: 172px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: $White;
+        h1 {
+          font-weight: 600;
+          font-size: 38px;
+          line-height: 45.6px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 35.2px;
+        }
+      }
+      #jowd_bottom {
+        width: 425px;
+        height: 60px;
+        display: flex;
+        input {
+          width: 425px;
+          border-radius: 20px;
+          border: none;
+          height: 60px;
+          font-size: 16px;
+          padding: 0;
+          padding-left: 20px;
+          font-weight: 400;
+          line-height: 22.4px;
+          color: $Black;
+          outline-color: $Call-to-action;
+          transition: 0.4s;
+        }
+        input:focus {
+          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+            rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+            rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+            rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+            rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+            rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+        button {
+          cursor: pointer;
+          width: 211px;
+          height: 60px;
+          background-color: $Call-to-action;
+          border: none;
+          border-radius: 20px;
+          font-size: 16px;
+          line-height: 22.4px;
+          font-weight: 600;
+          overflow: hidden;
+          z-index: 1;
+          position: relative;
+          margin-left: -201px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          a {
+            color: $White;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #join_our_weekly_digest {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #jowd_card {
+      width: 690px;
+      height: 360px;
+      border-radius: 20px;
+      background-color: $Card-Color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      > img {
+        width: 300px;
+        height: 280px;
+      }
+      #jowd_right {
+        width: 300px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        #jowd_headline {
+          width: 300px;
+          height: 132px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          color: $White;
+          h1 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 39.2px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+        }
+        #jowd_bottom {
+          width: 300px;
+          height: 108px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          input {
+            width: 280px;
+            height: 46px;
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+            padding: 0;
+            padding-left: 20px;
+            font-weight: 400;
+            line-height: 22.4px;
+            color: $Black;
+            outline-color: $Call-to-action;
+            transition: 0.4s;
+          }
+          input:focus {
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+              rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+              rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+              rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+              rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+              rgba(0, 0, 0, 0.09) 0px 32px 16px;
+          }
+          button {
+            cursor: pointer;
+            width: 300px;
+            height: 46px;
+            background-color: $Call-to-action;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            line-height: 22.4px;
+            font-weight: 600;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-left: 0;
+            align-items: center;
+            gap: 12px;
+            a {
+              color: $White;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  #join_our_weekly_digest {
+    width: 100%;
+    height: 645px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #jowd_card {
+      width: 315px;
+      height: 565px;
+      border-radius: 20px;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      > img {
+        width: 315px;
+        height: 255px;
+      }
+      #jowd_right {
+        width: 315px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        #jowd_headline {
+          width: 315px;
+          height: 132px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          color: $White;
+          h1 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 39.2px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+        }
+        #jowd_bottom {
+          width: 315px;
+          height: 108px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          input {
+            width: 295px;
+            height: 46px;
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+            padding: 0;
+            padding-left: 20px;
+            font-weight: 400;
+            line-height: 22.4px;
+            color: $Black;
+            outline-color: $Call-to-action;
+            transition: 0.4s;
+          }
+          input:focus {
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+              rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+              rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+              rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+              rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+              rgba(0, 0, 0, 0.09) 0px 32px 16px;
+          }
+          button {
+            cursor: pointer;
+            width: 315px;
+            height: 46px;
+            background-color: $Call-to-action;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            line-height: 22.4px;
+            font-weight: 600;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-left: 0;
+            align-items: center;
+            gap: 12px;
+            a {
+              color: $White;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
