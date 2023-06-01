@@ -1,0 +1,510 @@
+@import "../abstracts/colors";
+
+footer {
+  transition: 0.4s;
+  width: 100%;
+  height: 334px;
+  background-color: $Card-Color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: $Caption-Label-text;
+  font-family: $work_sans;
+  gap: 30px;
+  #footer_top {
+    width: 1049.41px;
+    display: flex;
+    #footer_row1 {
+      width: 327.41px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      img {
+        cursor: pointer;
+        width: 243.41px;
+        height: 32px;
+      }
+      #row1_bottom {
+        width: 238px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p {
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22.4px;
+          transition: 0.4s;
+        }
+        p:hover {
+          color: $White;
+        }
+        #footer_icons {
+          i {
+            transition: 0.4s;
+          }
+          i:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    #footer_row2 {
+      height: 166px;
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      > a:first-child {
+        font-family: $space_mono;
+        color: $White;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 35.2px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      a {
+        color: $Caption-Label-text;
+        text-decoration: none;
+        transition: 0.8s;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+      }
+      a:hover {
+        color: $White;
+      }
+    }
+    #footer_row3 {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      > p {
+        font-family: $space_mono;
+        color: $White;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 35.2px;
+      }
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p {
+          width: 330px;
+          cursor: pointer;
+          color: $Caption-Label-text;
+          transition: 0.8s;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22.4px;
+        }
+        p:hover {
+          color: $White;
+        }
+        .fill_input {
+          display: flex;
+          input {
+            border-radius: 20px;
+            position: relative;
+            border: none;
+            height: 60px;
+            width: 400px;
+            font-size: 16px;
+            padding: 0;
+            padding-left: 20px;
+            font-weight: 400;
+            line-height: 22.4px;
+            color: $Black;
+            outline-color: $Call-to-action;
+            transition: 0.4s;
+          }
+          input:focus {
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+              rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+              rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+              rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+              rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+              rgba(0, 0, 0, 0.09) 0px 32px 16px;
+          }
+          button {
+            cursor: pointer;
+            width: 179px;
+            height: 60px;
+            background-color: $Call-to-action;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            line-height: 22.4px;
+            font-weight: 600;
+            color: $White;
+            overflow: hidden;
+            margin-left: -178px;
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+  #footer_bottom {
+    width: 1049.41px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    span {
+      width: 1049.41px;
+      background-color: $Card-Color;
+      border-top: 1px solid $Caption-Label-text;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  footer {
+    width: 100%;
+    height: 703px;
+    background-color: $Card-Color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $Caption-Label-text;
+    font-family: $work_sans;
+    gap: 49px;
+    #footer_top {
+      width: 690px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      #footer_row1 {
+        width: 690px;
+        height: 163px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        img {
+          cursor: pointer;
+          width: 243.41px;
+          height: 32px;
+        }
+        #row1_bottom {
+          width: 238px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          p {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            transition: 0.4s;
+          }
+          p:hover {
+            color: $White;
+          }
+          #footer_icons {
+            i {
+              transition: 0.4s;
+            }
+            i:hover {
+              color: white;
+            }
+          }
+        }
+      }
+      #footer_row2 {
+        height: 161px;
+        width: 690px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        > a:first-child {
+          font-family: $space_mono;
+          color: $White;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 35.2px;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        a {
+          color: $Caption-Label-text;
+          text-decoration: none;
+          transition: 0.8s;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22.4px;
+        }
+        a:hover {
+          color: $White;
+        }
+      }
+      #footer_row3 {
+        display: flex;
+        flex-direction: column;
+        width: 690px;
+        height: 157px;
+        gap: 25px;
+        > p {
+          font-family: $space_mono;
+          color: $White;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 35.2px;
+        }
+        > div {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          p {
+            width: 330px;
+            cursor: pointer;
+            color: $Caption-Label-text;
+            transition: 0.8s;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+          }
+          p:hover {
+            color: $White;
+          }
+          .fill_input {
+            display: flex;
+            gap: 16px;
+            input {
+              border-radius: 20px;
+              border: none;
+              height: 60px;
+              width: 400px;
+              font-size: 16px;
+              padding: 0;
+              padding-left: 20px;
+              font-weight: 400;
+              line-height: 22.4px;
+              color: $Black;
+              outline-color: $Call-to-action;
+              transition: 0.4s;
+            }
+            input:focus {
+              box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+                rgba(0, 0, 0, 0.09) 0px 8px 4px,
+                rgba(0, 0, 0, 0.09) 0px 16px 8px,
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            }
+            button {
+              cursor: pointer;
+              width: 159px;
+              height: 60px;
+              background-color: $Call-to-action;
+              border: none;
+              border-radius: 20px;
+              font-size: 16px;
+              line-height: 22.4px;
+              font-weight: 600;
+              color: $White;
+              overflow: hidden;
+              z-index: 1;
+              margin-left: -174px;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+    #footer_bottom {
+      width: 690px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      span {
+        width: 690px;
+        background-color: $Card-Color;
+        border-top: 1px solid $Caption-Label-text;
+      }
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  footer {
+    width: 100%;
+    height: 776px;
+    background-color: $Card-Color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $Caption-Label-text;
+    font-family: $work_sans;
+    #footer_top {
+      width: 315px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #footer_row1 {
+        width: 315px;
+        height: 185px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        img {
+          cursor: pointer;
+          width: 243.41px;
+          height: 32px;
+        }
+        #row1_bottom {
+          width: 238px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          p {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            transition: 0.4s;
+          }
+          p:hover {
+            color: $White;
+          }
+          #footer_icons {
+            i {
+              transition: 0.4s;
+            }
+            i:hover {
+              color: white;
+            }
+          }
+        }
+      }
+      #footer_row2 {
+        height: 161px;
+        width: 315px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        > a:first-child {
+          font-family: $space_mono;
+          color: $White;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 35.2px;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        a {
+          color: $Caption-Label-text;
+          text-decoration: none;
+          transition: 0.8s;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22.4px;
+        }
+        a:hover {
+          color: $White;
+        }
+      }
+      #footer_row3 {
+        display: flex;
+        flex-direction: column;
+        width: 315px;
+        height: 227px;
+        gap: 25px;
+        > p {
+          font-family: $space_mono;
+          color: $White;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 35.2px;
+        }
+        > div {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          p {
+            width: 330px;
+            cursor: pointer;
+            color: $Caption-Label-text;
+            transition: 0.8s;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+          }
+          p:hover {
+            color: $White;
+          }
+          .fill_input {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 16px;
+            input {
+              border-radius: 20px;
+              border: none;
+              height: 46px;
+              width: 295px;
+              font-size: 16px;
+              padding: 0;
+              padding-left: 20px;
+              font-weight: 400;
+              line-height: 22.4px;
+              color: $Black;
+              outline-color: $Call-to-action;
+              transition: 0.4s;
+            }
+            input:focus {
+              box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+                rgba(0, 0, 0, 0.09) 0px 8px 4px,
+                rgba(0, 0, 0, 0.09) 0px 16px 8px,
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            }
+            button {
+              cursor: pointer;
+              width: 315px;
+              height: 46px;
+              background-color: $Call-to-action;
+              border: none;
+              border-radius: 20px;
+              font-size: 16px;
+              line-height: 22.4px;
+              font-weight: 600;
+              color: $White;
+              overflow: hidden;
+              z-index: 1;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+    #footer_bottom {
+      width: 315px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      span {
+        width: 315px;
+        background-color: $Card-Color;
+        border-top: 1px solid $Caption-Label-text;
+      }
+    }
+  }
+}
