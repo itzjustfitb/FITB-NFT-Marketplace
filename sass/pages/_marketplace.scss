@@ -267,8 +267,89 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        img {
-          transition: 0.4s;
+        .con-like {
+          --red: rgb(255, 50, 100);
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: 10px;
+          right: 10px;
+        }
+
+        .con-like .like {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          z-index: 20;
+          cursor: pointer;
+        }
+
+        .con-like .checkmark {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .con-like .outline,
+        .con-like .filled {
+          fill: var(--red);
+          position: absolute;
+        }
+
+        .con-like .filled {
+          animation: kfr-filled 0.5s;
+          display: none;
+        }
+
+        .con-like .celebrate {
+          position: absolute;
+          animation: kfr-celebrate 0.5s;
+          animation-fill-mode: forwards;
+          display: none;
+        }
+
+        .con-like .poly {
+          stroke: var(--red);
+          fill: var(--red);
+        }
+
+        .con-like .like:checked ~ .checkmark .filled {
+          display: block;
+        }
+
+        .con-like .like:checked ~ .checkmark .celebrate {
+          display: block;
+        }
+
+        @keyframes kfr-filled {
+          0% {
+            opacity: 0;
+            transform: scale(0);
+          }
+
+          50% {
+            opacity: 1;
+            transform: scale(1.2);
+          }
+        }
+
+        @keyframes kfr-celebrate {
+          0% {
+            transform: scale(0);
+          }
+
+          50% {
+            opacity: 0.8;
+          }
+
+          100% {
+            transform: scale(1.2);
+            opacity: 0;
+            display: none;
+          }
         }
         .marketplace_info {
           width: 270px;
@@ -338,9 +419,6 @@
             }
           }
         }
-      }
-      .marketplace_card:hover > img {
-        opacity: 0.4;
       }
       .marketplace_card::after {
         content: "";
@@ -438,9 +516,6 @@
           flex-direction: column;
           align-items: center;
           gap: 20px;
-          img {
-            transition: 0.4s;
-          }
           .marketplace_info {
             width: 265px;
             height: 60px;
@@ -515,9 +590,6 @@
         .marketplace_card:nth-child(10),
         .marketplace_card:nth-child(9) {
           display: none;
-        }
-        .marketplace_card:hover > img {
-          opacity: 0.4;
         }
         .marketplace_card::after {
           content: "";
@@ -611,18 +683,13 @@
         .marketplace_card {
           position: relative;
           width: 315px;
-          height: 402px;
+          height: 430px;
           border-radius: 20px;
           background-color: $Card-Color;
           display: flex;
           flex-direction: column;
           align-items: center;
           gap: 20px;
-          > .image {
-            width: 315px;
-            height: 238px;
-            transition: 0.4s;
-          }
           .marketplace_info {
             width: 275px;
             height: 43px;
@@ -700,9 +767,6 @@
         .marketplace_card:nth-child(7),
         .marketplace_card:nth-child(6) {
           display: none;
-        }
-        .marketplace_card:hover > img {
-          opacity: 0.4;
         }
         .marketplace_card::after {
           content: "";
