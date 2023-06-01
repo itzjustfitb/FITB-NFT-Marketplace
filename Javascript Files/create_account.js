@@ -21,7 +21,7 @@ nameInput.addEventListener("keyup", () => {
   }
   name_p.style.opacity = "1";
   if (nameInput.value.length == 0) {
-    nameInput.style.boxShadow = "#a259ff 0px -10px 25px 0px inset";
+    nameInput.style.boxShadow = "none";
     name_p.style.opacity = "0";
     nameInput.style.outlineColor = "#a259ff";
   }
@@ -41,7 +41,7 @@ emailInput.addEventListener("keyup", () => {
   }
   email_p.style.opacity = "1";
   if (emailInput.value.length == 0) {
-    emailInput.style.boxShadow = "#a259ff 0px -10px 25px 0px inset";
+    emailInput.style.boxShadow = "none";
     email_p.style.opacity = "0";
     emailInput.style.outlineColor = "#a259ff";
   }
@@ -60,7 +60,7 @@ passInput.addEventListener("keyup", () => {
   }
   pass_p.style.opacity = "1";
   if (passInput.value.length == 0) {
-    passInput.style.boxShadow = "#a259ff 0px -10px 25px 0px inset";
+    passInput.style.boxShadow = "none";
     pass_p.style.opacity = "0";
     passInput.style.outlineColor = "#a259ff";
   }
@@ -79,7 +79,7 @@ passconfirmInput.addEventListener("keyup", () => {
   }
   confirm_p.style.opacity = "1";
   if (passconfirmInput.value.length == 0) {
-    passconfirmInput.style.boxShadow = "#a259ff 0px -10px 25px 0px inset";
+    passconfirmInput.style.boxShadow = "none";
     confirm_p.style.opacity = "0";
     passconfirmInput.style.outlineColor = "#a259ff";
   }
