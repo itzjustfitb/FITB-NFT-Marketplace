@@ -1,0 +1,1001 @@
+#cover {
+  width: 100%;
+  height: 100%;
+  img:first-child {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  img:last-child {
+    transition: 0.4s;
+
+    margin-left: 115px;
+    margin-top: -70px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #cover {
+    width: 100%;
+    height: 100%;
+    img:first-child {
+      position: relative;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    img:last-child {
+      transition: 0.4s;
+
+      margin-left: 72px;
+      margin-top: -70px;
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  #cover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img:first-child {
+      position: relative;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    img:last-child {
+      transition: 0.4s;
+      margin-left: 0;
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+#anima_kid {
+  width: 100%;
+  height: 457px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #anima_kid_container {
+    width: 1050px;
+    height: 377px;
+    display: flex;
+    gap: 100px;
+    #anima_left {
+      width: 599px;
+      height: 377px;
+      display: flex;
+      flex-direction: column;
+      color: $White;
+      gap: 30px;
+      #anima_row1 {
+        font-size: 51px;
+        font-weight: 600;
+        line-height: 56.1px;
+      }
+      #anima_row2 {
+        width: 510px;
+        height: 74px;
+        display: flex;
+        gap: 20px;
+        .row2_texts {
+          display: flex;
+          flex-direction: column;
+          h1 {
+            font-family: $space_mono;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 39.2px;
+          }
+          p {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 35.2px;
+          }
+        }
+      }
+      #anima_row3 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+          font-family: $space_mono;
+          color: $Caption-Label-text;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 35.2px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 35.2px;
+        }
+      }
+      #anima_row4 {
+        h1 {
+          font-family: $space_mono;
+          color: $Caption-Label-text;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 35.2px;
+        }
+        #anima_social {
+          display: flex;
+          gap: 10px;
+          img {
+            cursor: pointer;
+            transition: 0.8s;
+          }
+          img:hover {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+    #anima_right {
+      width: 351px;
+      height: 60px;
+      display: flex;
+      #anima_buttons {
+        width: 351px;
+        display: flex;
+        gap: 20px;
+        button {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          height: 60px;
+          border-radius: 20px;
+          border: none;
+          transition: 0.4s;
+          a {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22.4px;
+            text-decoration: none;
+          }
+        }
+        button:first-child {
+          width: 186px;
+          background-color: $Call-to-action;
+          color: $White;
+          a {
+            color: $White;
+          }
+        }
+        button:first-child:hover {
+          transform: scale(0.9);
+          box-shadow: rgb(162, 89, 255, 0.5) 0px 5px,
+            rgb(162, 89, 255, 0.3) 0px 10px, rgb(162, 89, 255, 0.2) 0px 15px,
+            rgb(160, 87, 255, 0.1) 0px 20px, rgb(162, 89, 255, 0.05) 0px 25px;
+        }
+        button:last-child {
+          width: 145px;
+          background-color: transparent;
+          border: 2px solid $Call-to-action;
+          a {
+            color: $Call-to-action;
+          }
+        }
+        button:last-child:hover {
+          transform: scale(0.9);
+          box-shadow: rgb(162, 89, 255, 0.1) 0px 30px 60px -12px inset;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #anima_kid {
+    width: 100%;
+    height: 453px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #anima_kid_container {
+      width: 690px;
+      height: 393px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      #anima_left {
+        width: 100%;
+        height: 393px;
+        display: flex;
+        flex-direction: column;
+        color: $White;
+        gap: 30px;
+        #anima_row1 {
+          font-size: 38px;
+          font-weight: 600;
+          line-height: 45.6px;
+        }
+        #anima_row2 {
+          width: 510px;
+          height: 74px;
+          display: flex;
+          gap: 20px;
+          .row2_texts {
+            display: flex;
+            flex-direction: column;
+            h1 {
+              font-family: $space_mono;
+              font-weight: 700;
+              font-size: 22px;
+              line-height: 35.2px;
+            }
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 22.4px;
+            }
+          }
+        }
+        #anima_row3 {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h1 {
+            font-family: $space_mono;
+            color: $Caption-Label-text;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+        }
+        #anima_row4 {
+          h1 {
+            font-family: $space_mono;
+            color: $Caption-Label-text;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+          #anima_social {
+            display: flex;
+            gap: 10px;
+            img {
+              cursor: pointer;
+              transition: 0.8s;
+            }
+            img:hover {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+      #anima_right {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        #anima_buttons {
+          width: 100%;
+          display: flex;
+          gap: 20px;
+          button {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            height: 60px;
+            border-radius: 20px;
+            border: none;
+            transition: 0.4s;
+            a {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 22.4px;
+              text-decoration: none;
+            }
+          }
+          button:first-child {
+            width: 186px;
+            background-color: $Call-to-action;
+            color: $White;
+            a {
+              color: $White;
+            }
+          }
+          button:first-child:hover {
+            transform: scale(0.9);
+            box-shadow: rgb(162, 89, 255, 0.5) 0px 5px,
+              rgb(162, 89, 255, 0.3) 0px 10px, rgb(162, 89, 255, 0.2) 0px 15px,
+              rgb(160, 87, 255, 0.1) 0px 20px, rgb(162, 89, 255, 0.05) 0px 25px;
+          }
+          button:last-child {
+            width: 145px;
+            background-color: transparent;
+            border: 2px solid $Call-to-action;
+            a {
+              color: $Call-to-action;
+            }
+          }
+          button:last-child:hover {
+            transform: scale(0.9);
+            box-shadow: rgb(162, 89, 255, 0.1) 0px 30px 60px -12px inset;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  #anima_kid {
+    width: 100%;
+    height: 526px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #anima_kid_container {
+      width: 315px;
+      height: 466px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      #anima_left {
+        width: 100%;
+        height: 393px;
+        display: flex;
+        flex-direction: column;
+        color: $White;
+        gap: 30px;
+        #anima_row1 {
+          font-size: 38px;
+          font-weight: 600;
+          line-height: 45.6px;
+        }
+        #anima_row2 {
+          width: 100%;
+          height: 74px;
+          display: flex;
+          gap: 20px;
+          .row2_texts {
+            display: flex;
+            flex-direction: column;
+            h1 {
+              font-family: $space_mono;
+              font-weight: 700;
+              font-size: 22px;
+              line-height: 35.2px;
+            }
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 22.4px;
+            }
+          }
+        }
+        #anima_row3 {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h1 {
+            font-family: $space_mono;
+            color: $Caption-Label-text;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+        }
+        #anima_row4 {
+          h1 {
+            font-family: $space_mono;
+            color: $Caption-Label-text;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+          #anima_social {
+            display: flex;
+            gap: 10px;
+            img {
+              cursor: pointer;
+              transition: 0.8s;
+            }
+            img:hover {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+      #anima_right {
+        width: 100%;
+        height: 140px;
+        display: flex;
+        #anima_buttons {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          button {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            height: 60px;
+            border-radius: 20px;
+            border: none;
+            transition: 0.4s;
+            a {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 22.4px;
+              text-decoration: none;
+            }
+          }
+          button:first-child {
+            width: 100%;
+            background-color: $Call-to-action;
+            color: $White;
+            a {
+              color: $White;
+            }
+          }
+          button:first-child:hover {
+            transform: scale(0.9);
+            box-shadow: rgb(162, 89, 255, 0.5) 0px 5px,
+              rgb(162, 89, 255, 0.3) 0px 10px, rgb(162, 89, 255, 0.2) 0px 15px,
+              rgb(160, 87, 255, 0.1) 0px 20px, rgb(162, 89, 255, 0.05) 0px 25px;
+          }
+          button:last-child {
+            width: 100%;
+            background-color: transparent;
+            border: 2px solid $Call-to-action;
+            a {
+              color: $Call-to-action;
+            }
+          }
+          button:last-child:hover {
+            transform: scale(0.9);
+            box-shadow: rgb(162, 89, 255, 0.1) 0px 30px 60px -12px inset;
+          }
+        }
+      }
+    }
+  }
+}
+
+#anima_frame {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  #frame_container {
+    width: 1050px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    .frame_row {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      width: 350px;
+      height: 60px;
+      color: $White;
+      border-bottom: 2px solid transparent;
+      transition: 0.4s;
+      h1 {
+        transition: 0.4s;
+        color: $Caption-Label-text;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30.8px;
+      }
+      p {
+        transition: 0.4s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $Card-Color;
+        width: 40px;
+        height: 32px;
+        border-radius: 20px;
+        font-size: 16px;
+        line-height: 22.4px;
+        font-weight: 400;
+        font-family: $space_mono;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #anima_frame {
+    transition: 0.4s;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    #frame_container {
+      width: 680px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      .frame_row {
+        transition: 0.4s;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        width: 226.67px;
+        height: 60px;
+        color: $White;
+        border-bottom: 2px solid transparent;
+        transition: 0.4s;
+        h1 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22.4px;
+        }
+        p {
+          transition: 0.4s;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $Card-Color;
+          width: 35px;
+          height: 23px;
+          border-radius: 20px;
+          font-size: 12px;
+          line-height: 13.2px;
+          font-weight: 400;
+          font-family: $space_mono;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  #anima_frame {
+    transition: 0.4s;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    #frame_container {
+      width: 315px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      .frame_row {
+        transition: 0.4s;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        width: 105px;
+        height: 60px;
+        color: $White;
+        border-bottom: 2px solid transparent;
+        transition: 0.4s;
+        h1 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22.4px;
+        }
+        p {
+          transition: 0.4s;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          background-color: $Card-Color;
+          width: 35px;
+          height: 23px;
+          border-radius: 20px;
+          font-size: 12px;
+          line-height: 13.2px;
+          font-weight: 400;
+          font-family: $space_mono;
+        }
+      }
+    }
+  }
+}
+
+#anima_nft {
+  width: 100%;
+  height: 1627px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 31px;
+  .anima_cards_row {
+    display: flex;
+    gap: 30px;
+    width: 1050px;
+    height: 469px;
+    .anima_card {
+      position: relative;
+      width: 330px;
+      height: 469px;
+      border-radius: 20px;
+      background-color: $Card-Color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      img {
+        transition: 0.4s;
+      }
+      .anima_info {
+        width: 270px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        color: $White;
+        h1 {
+          font-size: 22px;
+          line-height: 30.8px;
+          font-weight: 600;
+        }
+        .anima_bottom {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            font-family: $space_mono;
+            list-style: 22.4px;
+          }
+        }
+      }
+      .anima_additional {
+        width: 270px;
+        height: 43px;
+        display: flex;
+        justify-content: center;
+        color: $White;
+        .anima_left {
+          width: 135px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          font-family: $space_mono;
+          h4 {
+            color: $Caption-Label-text;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 13.2px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+        }
+        .anima_right {
+          width: 135px;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          gap: 8px;
+          font-family: $space_mono;
+          h4 {
+            color: $Caption-Label-text;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 13.2px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+          }
+        }
+      }
+    }
+    .anima_card:hover > img {
+      opacity: 0.4;
+    }
+    .anima_card::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: 0;
+      border-radius: 20px;
+      border-bottom: 10px solid $Call-to-action;
+      transition: 0.4s;
+    }
+    .anima_card:hover::after {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #anima_nft {
+    width: 100%;
+    height: 1627px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 31px;
+    .anima_cards_row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      width: 690px;
+      height: 968px;
+      .anima_card {
+        position: relative;
+        width: 330px;
+        height: 469px;
+        border-radius: 20px;
+        background-color: $Card-Color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        img {
+          transition: 0.4s;
+        }
+        .anima_info {
+          width: 270px;
+          height: 60px;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          color: $White;
+          h1 {
+            font-size: 22px;
+            line-height: 30.8px;
+            font-weight: 600;
+          }
+          .anima_bottom {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              font-family: $space_mono;
+              list-style: 22.4px;
+            }
+          }
+        }
+        .anima_additional {
+          width: 270px;
+          height: 43px;
+          display: flex;
+          justify-content: center;
+          color: $White;
+          .anima_left {
+            width: 135px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-family: $space_mono;
+            h4 {
+              color: $Caption-Label-text;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 13.2px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22.4px;
+            }
+          }
+          .anima_right {
+            width: 135px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 8px;
+            font-family: $space_mono;
+            h4 {
+              color: $Caption-Label-text;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 13.2px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22.4px;
+            }
+          }
+        }
+      }
+      .anima_card:hover > img {
+        opacity: 0.4;
+      }
+      .anima_card::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        border-radius: 20px;
+        border-bottom: 10px solid $Call-to-action;
+        transition: 0.4s;
+      }
+      .anima_card:hover::after {
+        width: 50%;
+      }
+    }
+    .anima_cards_row:nth-child(3) {
+      display: none;
+    }
+    .anima_cards_row:nth-child(2) {
+      margin-top: -499px;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-flow: wrap-reverse;
+      flex-direction: row-reverse;
+      align-items: end;
+      .anima_card:nth-child(1) {
+        order: 2;
+      }
+      .anima_card:nth-child(2) {
+        order: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  #anima_nft {
+    width: 100%;
+    height: 1426px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 31px;
+    .anima_cards_row {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      gap: 30px;
+      width: 315px;
+      height: 1266px;
+      .anima_card {
+        position: relative;
+        width: 315px;
+        height: 402px;
+        border-radius: 20px;
+        background-color: $Card-Color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        > img {
+          width: 315px;
+          height: 238px;
+          transition: 0.4s;
+        }
+        .anima_info {
+          width: 270px;
+          height: 60px;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          color: $White;
+          h1 {
+            font-size: 22px;
+            line-height: 30.8px;
+            font-weight: 600;
+          }
+          .anima_bottom {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              font-family: $space_mono;
+              list-style: 22.4px;
+            }
+          }
+        }
+        .anima_additional {
+          width: 270px;
+          height: 43px;
+          display: flex;
+          justify-content: center;
+          color: $White;
+          .anima_left {
+            width: 135px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-family: $space_mono;
+            h4 {
+              color: $Caption-Label-text;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 13.2px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22.4px;
+            }
+          }
+          .anima_right {
+            width: 135px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 8px;
+            font-family: $space_mono;
+            h4 {
+              color: $Caption-Label-text;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 13.2px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22.4px;
+            }
+          }
+        }
+      }
+      .anima_card:hover > img {
+        opacity: 0.4;
+      }
+      .anima_card::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        border-radius: 20px;
+        border-bottom: 10px solid $Call-to-action;
+        transition: 0.4s;
+      }
+      .anima_card:hover::after {
+        width: 50%;
+      }
+    }
+    .anima_cards_row:nth-child(3),
+    .anima_cards_row:nth-child(2) {
+      display: none;
+    }
+  }
+}
