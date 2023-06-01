@@ -141,9 +141,13 @@ nav {
       display: none;
     }
     #sidebar {
+      transition: 0.4s;
+      width: 300px;
+      height: 400px;
       z-index: 100;
       display: flex;
       flex-direction: column;
+      margin-top: 375px;
       align-items: end;
       #burger_menu {
         margin-right: 50px;
@@ -152,30 +156,30 @@ nav {
         transition: 0.4s;
         z-index: 1;
       }
-      #burger_menu:hover {
-        transform: rotate(360deg) scale(1.2);
-      }
       #dropdown {
-        border-radius: 20px;
-        position: relative;
-        position: absolute;
-        height: 40%;
-        background-color: $White;
+        width: 300px;
+        height: 400px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: $Card-Color;
         display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 40px;
         justify-content: center;
-        display: none;
+        transition: 0.4s;
+        position: absolute;
         > a {
+          transition: 0.4s;
           display: flex;
           justify-content: center;
           align-items: center;
-          text-align: center;
           height: 40px;
           width: 100%;
           color: $Call-to-action;
           text-decoration: none;
+          font-size: 24px;
           font-weight: 600;
           transition: 0.4s;
         }
@@ -235,8 +239,8 @@ nav {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 20px;
-          height: 20px;
+          width: 40px;
+          height: 40px;
           color: $White;
           border-radius: 50%;
           background-color: $Call-to-action;
