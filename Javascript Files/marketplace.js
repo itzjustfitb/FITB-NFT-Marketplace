@@ -228,7 +228,7 @@ const search = document.getElementById("search");
 search.addEventListener("keyup", (e) => {
   Array.from(marketplace_row.children)?.forEach((item) => {
     if (
-      item.firstElementChild.nextElementSibling.firstElementChild.textContent
+      item.firstElementChild.nextElementSibling.nextSibling.firstElementChild.textContent
         .toLowerCase()
         .includes(e.target.value.toLowerCase())
     ) {
