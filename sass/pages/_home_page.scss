@@ -2504,3 +2504,55 @@ body {
     }
   }
 }
+
+#toast {
+  transition: 0.4s;
+  top: 20px;
+  right: 20px;
+  position: fixed;
+  border-left: 5px solid green;
+  border-bottom: 5px solid green;
+  width: 315px;
+  height: 60px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  background-color: $White;
+  i {
+    margin-left: 20px;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50%;
+    height: 30px;
+    color: $White;
+  }
+  i:first-child {
+    background-color: green;
+  }
+  i:last-child {
+    transition: 0.4s;
+    cursor: pointer;
+    color: $Background;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-bottom: 17px;
+  }
+  i:last-child:hover {
+    color: red;
+    transform: scale(1.2) rotate(360deg);
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    p {
+      width: 200px;
+    }
+    p:last-child {
+      font-size: 14px;
+    }
+  }
+}
