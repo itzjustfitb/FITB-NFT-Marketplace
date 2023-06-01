@@ -45,6 +45,7 @@ reset_btn.textContent = "Reset";
 buttons_div.setAttribute("id", "clock_func");
 
 info_clock.addEventListener("click", (e) => {
+  info_clock.style.height = "160px";
   info_clock.append(buttons_div);
   buttons_div.append(start_btn, stop_btn, reset_btn);
 
@@ -53,6 +54,7 @@ info_clock.addEventListener("click", (e) => {
 });
 
 body.addEventListener("click", () => {
+  info_clock.style.height = "144px";
   buttons_div.style.display = "none";
   toast.style.display = "none";
 });
@@ -125,8 +127,14 @@ reset_btn.addEventListener("click", () => {
 });
 
 const subscribe_footer = document.getElementById("subscribe_footer");
+const jowd_btn = document.getElementById("jowd_btn");
 const toast = document.getElementById("toast");
 const close_toast = document.getElementById("close_toast");
+
+jowd_btn.addEventListener("click", (e) => {
+  toast.style.display = "flex";
+  e.stopPropagation();
+});
 
 subscribe_footer.addEventListener("click", (e) => {
   toast.style.display = "flex";
