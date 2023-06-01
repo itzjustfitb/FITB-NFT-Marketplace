@@ -1,0 +1,538 @@
+#top_creators_section {
+  transition: 0.4s;
+  width: 100%;
+  height: 271px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #top_creators_container {
+    width: 1050px;
+    height: 111px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: $work_sans;
+    color: $White;
+    h1 {
+      font-weight: 600;
+      font-size: 51px;
+      line-height: 56.1px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 35.2px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #top_creators_section {
+    transition: 0.4s;
+    width: 100%;
+    height: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #top_creators_container {
+      width: 690px;
+      height: 88px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-family: $work_sans;
+      color: $White;
+      h1 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 45.6px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  #top_creators_section {
+    transition: 0.4s;
+    width: 100%;
+    height: 153px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #top_creators_container {
+      width: 315px;
+      height: 93px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-family: $work_sans;
+      color: $White;
+      h1 {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 39.2px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+      }
+    }
+  }
+}
+
+#top_creators_nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  #top_creators_nav_container {
+    width: 1050px;
+    height: 60px;
+    display: flex;
+    div {
+      cursor: pointer;
+      transition: 0.4s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 262.5px;
+      font-weight: 600;
+      line-height: 30.8px;
+      font-size: 22px;
+      color: $Caption-Label-text;
+      border-bottom: 2px solid transparent;
+      p {
+        transition: 0.4s;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #top_creators_nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    #top_creators_nav_container {
+      width: 680px;
+      height: 60px;
+      display: flex;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        font-weight: 600;
+        line-height: 22.4px;
+        font-size: 16px;
+        color: $Caption-Label-text;
+        border-bottom: 2px solid transparent;
+      }
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  #top_creators_nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    #top_creators_nav_container {
+      width: 315px;
+      height: 60px;
+      display: flex;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 78.75px;
+        font-weight: 600;
+        line-height: 22.4px;
+        font-size: 16px;
+        color: $Caption-Label-text;
+        border-bottom: 2px solid transparent;
+        p {
+          display: none;
+        }
+        span {
+          display: initial;
+        }
+      }
+    }
+  }
+}
+
+#rankings {
+  width: 100%;
+  height: 2206px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  #rankings_top {
+    border-radius: 20px;
+    border: 1px solid $Card-Color;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    width: 1050px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 400;
+    font-family: $space_mono;
+    color: $Caption-Label-text;
+    #ranking_left {
+      display: flex;
+      gap: 20px;
+      width: 430px;
+      height: 22px;
+    }
+    #ranking_right {
+      display: flex;
+      gap: 20px;
+      width: 520px;
+      height: 22px;
+      p {
+        width: 160px;
+      }
+    }
+  }
+  #rankings_bottom {
+    width: 1050px;
+    height: 2060px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    .ranking_card {
+      transition: 0.4s;
+      background-color: $Card-Color;
+      border-radius: 20px;
+      width: 1050px;
+      height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      .ranking_title {
+        width: 430px;
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        span {
+          transition: 1s;
+          width: 30px;
+          background-color: $Background;
+          height: 30px;
+          border-radius: 50%;
+          color: $Caption-Label-text;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: $space_mono;
+        }
+        .ranking_headline {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          p {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30.8px;
+            color: $White;
+          }
+        }
+      }
+      .ranking_values {
+        display: flex;
+        width: 520px;
+        height: 22px;
+        gap: 20px;
+        p {
+          width: 160px;
+          font-size: 16px;
+          line-height: 22.4px;
+          font-weight: 400;
+          font-family: $space_mono;
+          color: $White;
+        }
+        p:first-child {
+          color: $Green;
+        }
+      }
+    }
+    .ranking_card:hover {
+      transform: scale(1.05);
+    }
+
+    .ranking_card:hover span {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #rankings {
+    width: 100%;
+    height: 2206px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    #rankings_top {
+      width: 690px;
+      height: 46px;
+      border-radius: 20px;
+      border: 1px solid $Card-Color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+      font-size: 16px;
+      line-height: 22.4px;
+      font-weight: 400;
+      font-family: $space_mono;
+      color: $Caption-Label-text;
+      #ranking_left {
+        display: flex;
+        gap: 20px;
+        width: 430px;
+        height: 22px;
+      }
+      #ranking_right {
+        display: flex;
+        gap: 20px;
+        width: 220px;
+        height: 22px;
+        p {
+          width: 100px;
+        }
+        p:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+    #rankings_bottom {
+      width: 690px;
+      height: 2060px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      .ranking_card {
+        transition: 0.4s;
+        background-color: $Card-Color;
+        border-radius: 20px;
+        width: 690px;
+        height: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .ranking_title {
+          width: 410px;
+          align-items: center;
+          display: flex;
+          gap: 20px;
+          span {
+            transition: 1s;
+            width: 30px;
+            background-color: transparent;
+            height: 30px;
+            border-radius: 50%;
+            color: $Caption-Label-text;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $space_mono;
+          }
+          .ranking_headline {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            p {
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 30.8px;
+              color: $White;
+            }
+          }
+        }
+        .ranking_values {
+          display: flex;
+          width: 220px;
+          height: 22px;
+          gap: 20px;
+          p {
+            width: 160px;
+            font-size: 16px;
+            line-height: 22.4px;
+            font-weight: 400;
+            font-family: $space_mono;
+            color: $White;
+          }
+          p:first-child {
+            color: $Green;
+          }
+          p:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+      .ranking_card:hover {
+        transform: scale(1.05);
+      }
+
+      .ranking_card:hover span {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  #rankings {
+    width: 100%;
+    height: 1526px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    #rankings_top {
+      width: 315px;
+      height: 40px;
+      border-radius: 20px;
+      border: 1px solid $Card-Color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+      font-size: 16px;
+      line-height: 22.4px;
+      font-weight: 400;
+      font-family: $space_mono;
+      color: $Caption-Label-text;
+      #ranking_left {
+        margin-left: 15px;
+        display: flex;
+        gap: 20px;
+        width: 215px;
+        height: 22px;
+      }
+      #ranking_right {
+        display: flex;
+        gap: 20px;
+        width: 100px;
+        height: 22px;
+        p {
+          width: 100%;
+        }
+        p:nth-child(2),
+        p:nth-child(1) {
+          display: none;
+        }
+      }
+    }
+    #rankings_bottom {
+      width: 315px;
+      height: 1380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      .ranking_card {
+        transition: 0.4s;
+        background-color: $Card-Color;
+        border-radius: 20px;
+        width: 315px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .ranking_title {
+          width: 201px;
+          align-items: center;
+          display: flex;
+          gap: 10px;
+          span {
+            transition: 1s;
+            width: 30px;
+            background-color: transparent;
+            height: 30px;
+            border-radius: 50%;
+            color: $Caption-Label-text;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $space_mono;
+          }
+          .ranking_headline {
+            width: 167px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22.4px;
+              color: $White;
+            }
+          }
+        }
+        .ranking_values {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          width: 80px;
+          height: 22px;
+          gap: 20px;
+          p {
+            width: 80px;
+            font-size: 12px;
+            line-height: 13.2px;
+            font-weight: 400;
+            font-family: $space_mono;
+            color: $White;
+          }
+          p:first-child {
+            color: $Green;
+          }
+          p:nth-child(2),
+          p:nth-child(1) {
+            display: none;
+          }
+        }
+      }
+      .ranking_card:hover {
+        transform: scale(1.05);
+      }
+
+      .ranking_card:hover span {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
