@@ -2828,6 +2828,58 @@ body #trending_collection #collection_card_row .row .cards_row .texts_trending_c
     text-decoration: none;
   }
 }
+#toast {
+  transition: 0.4s;
+  top: 20px;
+  right: 20px;
+  position: fixed;
+  border-left: 5px solid green;
+  border-bottom: 5px solid green;
+  width: 315px;
+  height: 60px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+}
+#toast i {
+  margin-left: 20px;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 50%;
+  height: 30px;
+  color: #ffffff;
+}
+#toast i:first-child {
+  background-color: green;
+}
+#toast i:last-child {
+  transition: 0.4s;
+  cursor: pointer;
+  color: #2b2b2b;
+  font-size: 22px;
+  margin-left: 10px;
+  margin-bottom: 17px;
+}
+#toast i:last-child:hover {
+  color: red;
+  transform: scale(1.2) rotate(360deg);
+}
+#toast div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#toast div p {
+  width: 200px;
+}
+#toast div p:last-child {
+  font-size: 14px;
+}
+
 body {
   margin: 0 auto;
 }
