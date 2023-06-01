@@ -54,6 +54,7 @@ info_clock.addEventListener("click", (e) => {
 
 body.addEventListener("click", () => {
   buttons_div.style.display = "none";
+  toast.style.display = "none";
 });
 
 let timer = document.getElementById("timer");
@@ -121,4 +122,21 @@ reset_btn.addEventListener("click", () => {
   minutes = 59;
   hours = 59;
   timer.innerHTML = "59:59:59";
+});
+
+const subscribe_footer = document.getElementById("subscribe_footer");
+const toast = document.getElementById("toast");
+const close_toast = document.getElementById("close_toast");
+
+subscribe_footer.addEventListener("click", (e) => {
+  toast.style.display = "flex";
+  e.stopPropagation();
+});
+
+close_toast.addEventListener("click", () => {
+  toast.style.display = "none";
+});
+
+toast.addEventListener("click", (e) => {
+  e.stopPropagation();
 });
