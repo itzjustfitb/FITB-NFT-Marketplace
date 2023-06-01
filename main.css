@@ -5217,7 +5217,6 @@ body {
   }
   #marketplace_section #marketplace_cards {
     width: 100%;
-    height: 3000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -5411,6 +5410,9 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+  #marketplace_section #marketplace_cards .marketplace_row .marketplace_card > img {
+    width: 315px;
   }
   #marketplace_section #marketplace_cards .marketplace_row .marketplace_card .marketplace_info {
     width: 275px;
