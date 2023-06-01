@@ -1695,7 +1695,9 @@ body {
       justify-content: center;
       color: $White;
       gap: 10px;
+      transition: 0.4s;
       p {
+        transition: 0.4s;
         font-family: $space_mono;
         font-size: 12px;
         line-height: 13.2px;
