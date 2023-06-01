@@ -651,7 +651,7 @@
       flex-direction: column;
       align-items: center;
       gap: 20px;
-      img {
+      > img {
         transition: 0.4s;
       }
       .anima_info {
@@ -722,9 +722,6 @@
           }
         }
       }
-    }
-    .anima_card:hover > img {
-      opacity: 0.4;
     }
     .anima_card::after {
       content: "";
