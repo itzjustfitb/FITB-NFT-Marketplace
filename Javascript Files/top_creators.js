@@ -105,11 +105,12 @@ const dropdown = document.getElementById("dropdown");
 const closeBtn = document.getElementById("closeBtn");
 
 burger.addEventListener("click", () => {
-  dropdown.style.display = "flex";
   burger.style.display = "none";
+  dropdown.style.right = "0px";
 });
 
 closeBtn.addEventListener("click", () => {
-  dropdown.style.display = "none";
+  dropdown.style.right = "-400px";
   burger.style.display = "initial";
 });
+
