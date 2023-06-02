@@ -292,13 +292,14 @@ nav #sidebar {
     border-bottom-left-radius: 20px;
     background-color: #3b3b3b;
     display: flex;
-    display: none;
     flex-direction: column;
     align-items: center;
     gap: 40px;
     justify-content: center;
     transition: 0.4s;
-    position: absolute;
+    position: fixed;
+    z-index: 1;
+    right: -400px;
   }
   nav #sidebar #dropdown > a {
     transition: 0.4s;
