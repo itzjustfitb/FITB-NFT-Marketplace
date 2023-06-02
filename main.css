@@ -4408,6 +4408,9 @@ body {
   width: 430px;
   height: 22px;
 }
+#rankings #rankings_top #ranking_left p {
+  cursor: pointer;
+}
 #rankings #rankings_top #ranking_right {
   display: flex;
   gap: 20px;
