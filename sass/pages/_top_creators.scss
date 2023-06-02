@@ -199,6 +199,9 @@
       gap: 20px;
       width: 430px;
       height: 22px;
+      p {
+        cursor: pointer;
+      }
     }
     #ranking_right {
       display: flex;
