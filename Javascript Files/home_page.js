@@ -32,7 +32,6 @@ closeBtn.addEventListener("click", () => {
   burger.style.display = "initial";
 });
 
-
 const info_clock = document.getElementById("info_right");
 const buttons_div = document.createElement("div");
 const body = document.querySelector("body");
@@ -128,18 +127,28 @@ reset_btn.addEventListener("click", () => {
 });
 
 const subscribe_footer = document.getElementById("subscribe_footer");
-const jowd_btn = document.getElementById("jowd_btn");
 const toast = document.getElementById("toast");
 const close_toast = document.getElementById("close_toast");
+const jowd_btn = document.getElementById("jowd_btn");
 
 jowd_btn.addEventListener("click", (e) => {
   toast.style.display = "flex";
+
   e.stopPropagation();
+
+  setTimeout(() => {
+    toast.style.display = "none";
+  }, 5000);
 });
 
 subscribe_footer.addEventListener("click", (e) => {
   toast.style.display = "flex";
+
   e.stopPropagation();
+
+  setTimeout(() => {
+    toast.style.display = "none";
+  }, 5000);
 });
 
 close_toast.addEventListener("click", () => {
