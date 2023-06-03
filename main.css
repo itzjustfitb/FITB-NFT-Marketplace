@@ -2841,16 +2841,16 @@ body #trending_collection #collection_card_row .row .cards_row .texts_trending_c
   right: 20px;
   position: fixed;
   border-left: 5px solid green;
-  border-bottom: 5px solid green;
   width: 315px;
   height: 60px;
   border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   display: none;
   justify-content: start;
   align-items: center;
   gap: 10px;
   background-color: #ffffff;
+  animation: moveleft 0.4s linear forwards;
+  transform: translateX(100%);
 }
 #toast i {
   margin-left: 20px;
@@ -2887,6 +2887,26 @@ body #trending_collection #collection_card_row .row .cards_row .texts_trending_c
   font-size: 14px;
 }
 
+#toast:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: green;
+  width: 100%;
+  height: 5px;
+  animation: anim 5s linear forwards;
+}
+
+@keyframes moveleft {
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes anim {
+  100% {
+    width: 0;
+  }
+}
 body {
   margin: 0 auto;
 }
