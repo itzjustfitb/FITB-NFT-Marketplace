@@ -268,3 +268,25 @@ hashtag.addEventListener("click", () => {
     showTable(RANKING_CARDS);
   }
 });
+
+const subscribe_footer = document.getElementById("subscribe_footer");
+const toast = document.getElementById("toast");
+const close_toast = document.getElementById("close_toast");
+
+subscribe_footer.addEventListener("click", (e) => {
+  toast.style.display = "flex";
+
+  e.stopPropagation();
+
+  setTimeout(() => {
+    toast.style.display = "none";
+  }, 5000);
+});
+
+close_toast.addEventListener("click", () => {
+  toast.style.display = "none";
+});
+
+toast.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
